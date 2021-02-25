@@ -1,0 +1,40 @@
+.doanh-thu {
+  padding: 0px;
+}
+@media only screen and (min-width: 992px) {
+  .doanh-thu {
+    padding: 0 0 0 15px;
+  }
+}
+.gopy-line {
+  padding: 2px 15px;
+  border: 1px solid #ccc;
+  border-left: 7px solid rgb(194, 187, 187);
+  margin-bottom: 20px;
+}
+.gopy-line .label {
+  margin-right: 10px;
+  padding: 5px;
+}
+
+.admin {
+  &__menu-right {
+    &__icon {
+      width: 25px;
+      height: 25px !important;
+      margin-right: 3px;
+      filter: invert(37%) sepia(85%) saturate(4878%) hue-rotate(202deg)
+        brightness(106%) contrast(102%);
+    }
+
+    &__item {
+      font-size: 18px;
+      padding-left: 7px;
+      a {
+        text-decoration: none;
+        display: block;
+        white-space: nowrap;
+      }
+    }
+  }
+}

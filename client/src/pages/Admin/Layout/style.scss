@@ -1,0 +1,188 @@
+body {
+  overflow-x: hidden;
+}
+
+/* =================================== Menu Left ================================== */
+.sidebar {
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  z-index: 1;
+  border-right: 1px solid #ccc;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+.sidebar.close-menu {
+  width: 51px;
+}
+.sidebar img {
+  padding: 5px;
+  min-height: 53px;
+  height: 53px;
+  margin-left: 10px;
+}
+.sidebar a:nth-child(2) {
+  border-top: 1px solid #ccc;
+}
+.sidebar a {
+  transition: 0.3s;
+}
+.menu-left .dropdown .dropdown-menu li a {
+  padding: 10px 15px;
+}
+.menu-left .dropdown .dropdown-menu {
+  width: 100px;
+}
+ul.menu-left li {
+  min-width: 250px;
+  text-transform: capitalize;
+}
+ul.menu-left li a span {
+  margin: 0 15px 0 5px;
+}
+#main {
+  transition: margin-left 0.5s;
+  margin-left: 250px;
+  border-right: 1px solid #ccc;
+}
+
+#main.close-menu {
+  margin-left: 51px;
+}
+
+.openbtn {
+  cursor: pointer;
+  font-size: 50;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {
+    padding-top: 15px;
+  }
+
+  .sidebar a {
+    font-size: 18px;
+  }
+}
+
+/* =================================== Menu TOP ADMIN KS ================================== */
+.menu-top {
+  border-bottom: 1px solid #ccc;
+  height: 50px;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 1;
+  display: block;
+
+  &__item {
+    border-left: 1px solid #ccc;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+    justify-content: center;
+  }
+  .navbar {
+    border: none;
+    border-bottom: 1px solid #ccc;
+  }
+}
+
+.navbar-right li {
+  border-right: 1px solid #ccc;
+}
+.navbar-right li:last-child {
+  border-right: none;
+}
+@media only screen and (max-width: 992px) {
+  .menu-top .date,
+  .menu-top .time {
+    display: none;
+  }
+}
+
+/* =================================== ADMIN CONTENT ================================== */
+.btn-item {
+  height: 100px;
+  color: white;
+  border: none;
+  font-size: 20px;
+}
+
+.bg-den {
+  background: linear-gradient(90deg, #a18cd1 0, #fbc2eb);
+}
+
+.bg-tcong {
+  background: linear-gradient(270deg, #4fd0fe 0, #42acfd);
+}
+
+.bg-chuaxn {
+  background: linear-gradient(
+    90deg,
+    #f78ca0 0,
+    #f9748f 19%,
+    #fd868c 60%,
+    #fe9a8b
+  );
+}
+.box {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  /* padding: 15px; */
+  margin-bottom: 20px;
+  margin-top: 30px;
+}
+.box-header {
+  border-bottom: 1px solid #ccc;
+  padding: 1rem 2rem;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+.box-content {
+  padding: 2rem;
+  overflow-y: auto;
+}
+.box-content-line {
+  margin-bottom: 20px;
+}
+.box-content-line p:not(.help-block) {
+  text-transform: capitalize;
+}
+.admin-content {
+  padding: 2.2rem;
+}
+.admin-header {
+  border-bottom: 1px solid #ccc;
+  padding: 30px 50px;
+  background: #f9fbfd;
+}
+.admin-header-left {
+  padding: 5px 0;
+}
+.admin-header-left h3 {
+  margin: 0;
+  padding: 0;
+}
+
+/* ======================== Thanh Scroll ======================= */
+::-webkit-scrollbar {
+  width: 10px;
+  background: transparent;
+  z-index: 1;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(270deg, #4fd0fe 0, #42acfd);
+  border: 2px solid #fff;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #337ab7;
+}
+.check-icon {
+  width: 15px;
+  height: 15px;
+}
+
+///@at-root

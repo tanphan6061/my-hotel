@@ -1,0 +1,8 @@
+.menu-right__item__active {
+  background: #007bff;
+  color: white;
+  .admin__menu-right__icon {
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(302deg)
+      brightness(109%) contrast(101%);
+  }
+}

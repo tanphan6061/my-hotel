@@ -1,0 +1,20 @@
+.error {
+  color: red;
+  font-size: 150px;
+  width: 570px;
+  font-family: Palatino Linotype;
+  text-shadow: 7px 2px white;
+  .icon {
+    position: relative;
+    top: -60px;
+    text-shadow: 5px 2px 5px black;
+  }
+  .message {
+    font-size: 35px;
+    color: black;
+    position: relative;
+    top: -85px;
+    transform: translate(70%, 50%);
+    text-shadow: none;
+  }
+}

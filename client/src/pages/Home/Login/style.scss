@@ -1,0 +1,32 @@
+.user {
+  width: 40%;
+  min-width: 400px;
+  border: 1px solid #ccc;
+  background: white;
+  padding: 15px 50px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  .page-header {
+    padding-bottom: 9px;
+    margin: 10px 0 10px;
+    border-bottom: 1px solid #eee;
+  }
+  label {
+    font-weight: 500;
+    display: block;
+  }
+}
+
+.user-center {
+  margin: 0 auto;
+}
+.user-bg {
+  background: #1d96d3;
+  padding: 0 15px 15px;
+}
+.user-bg h3 {
+  color: white;
+}
+.breadcrumb {
+  padding-left: 100px;
+}

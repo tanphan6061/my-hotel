@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+.icon-to-top {
+  font-size: 25px;
+  position: fixed;
+  right: 30px;
+  animation: iconTop 1s ease-in-out 0s infinite;
+  cursor: pointer;
+  z-index: 99999999;
+}
+@keyframes iconTop {
+  from {
+    bottom: 25px;
+    color: rgb(185, 185, 29);
+  }
+  to {
+    bottom: 30px;
+    color: rgb(221, 221, 55);
+  }
+}
+.bg-primary {
+  background-color: #337ab7 !important;
+}
+
+.bg {
+  background-image: linear-gradient(to bottom, rgb(192, 198, 229), white);
+  min-height: 10rem;
+  width: 100%;
+  position: fixed;
+  z-index: -5;
+}
+
+.icon {
+  width: 15px;
+  height: 15px;
+}
